@@ -10,19 +10,20 @@ function render(ev) {
     })
     .then(function(response){
 
+        //фильтруем массив объектов по значению для получения первых 16 объектов
         var filter = response.filter( function(e){
             if (e.id <= 16) {
                 return true;
             }
         });
 
-          
+        //осуществляем перебор этих 16 объектов  
         filter.forEach((callback, argthis) => {
             let count = callback.id;
             
 
             
-
+            // рисуем карточки
             mainContent+=`
             
             <div class="col-md-3 cards__col">
@@ -90,7 +91,7 @@ function render(ev) {
                 </div>
 
             `
-            
+            //вставляем отрисованные карточки в блок
             main.innerHTML = mainContent;
             
         })
@@ -99,9 +100,11 @@ function render(ev) {
 
 }
 
+//вызываем функицю
 render();
 
 
+//функция для отрисовки всех карточек без фильтрации объектов массива
 function renderAll(ev) {
     fetch("https://6075786f0baf7c0017fa64ce.mockapi.io/products")
     .then(function(response) {
@@ -190,6 +193,7 @@ function renderAll(ev) {
 
 let moreBtn = document.querySelector('.more-btn');
 
+//вызываем функцию отрисовки всех карточек по клику на кнопку
 moreBtn.addEventListener('click', renderAll);
 
 
