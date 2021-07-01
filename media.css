@@ -1,0 +1,15 @@
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .cards__price {
+        font-size: 18px;
+    }
+    .cards__item-name {
+        margin-top: 12px;
+    }
+    .cards__city {
+        font-size: 11px;
+    }
+
+    .cards__date {
+        font-size: 11px; 
+    }
+ }

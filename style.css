@@ -1,0 +1,192 @@
+:root {
+    --black: #2c2c2c;
+    --darkGrey: #5a5a5a;
+    --lightGrey: #8f8f8f;
+    --aqua: #00A0AB;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #efefef;
+}
+
+
+.h1 {
+    color: var(--black);
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.cards {
+    margin-top: 25px;
+}
+
+.cards__col {
+    margin-top: 25px;
+}
+
+.cards__card-wrapper {
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 1px 6px rgba(1, 1, 1, 0.3);
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.goods-iteractive {
+    position: absolute;
+    right: 14px;
+    bottom: 36px;
+    z-index: 99;
+}
+
+
+.goods-interactive__btn {
+    display: block;
+    border: none;
+    
+}
+
+.btn-compare {
+    width: 24px;
+    height: 24px;
+    background-image: url(img/compare.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.btn-like {
+    width: 24px;
+    height: 24px;
+    background-image: url(img/like.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.btn-like:hover {
+    background-image: url(img/like_hover.png);
+}
+
+.goods-interactive__btn:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.carousel-indicators {
+    margin-bottom: 5px;
+    z-index: 25 !important;
+}
+
+.carousel-indicators button {
+    width: 15px !important;
+}
+
+
+.cards__card-info-wrapper {
+    background-color: #fff;
+}
+
+.cards__oldPrice {
+    margin-bottom: 1px;
+    color: var(--darkGrey);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cards__price {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cards__info-innerCon {
+    padding: 12px;
+}
+
+.cards__info-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.btn-delivery {
+    background-image: url(img/delivery.png);
+}
+
+.btn-delivery:hover {
+    background-image: url(img/delivery_hover.png);
+}
+
+.btn-deal {
+    background-image: url(img/deal.png);
+}
+
+.btn-deal:hover {
+    background-image: url(img/deal_hover.png);
+}
+
+.cards__item-name {
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.cards__item-name:hover {
+    color: var(--lightGrey);
+}
+
+.cards__city {
+    color: var(--lightGrey);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.cards__date {
+    color: var(--lightGrey);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.cards__img-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 15;
+}
+
+.more {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.more-btn {
+    padding-right: 23px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--aqua);
+    background-image: url(img/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 100% 55%;
+}
+
+.img_block {
+    height: 224px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(https://source.unsplash.com/collection/190727/800x600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
